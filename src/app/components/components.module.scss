@@ -2,6 +2,9 @@
   position: relative;
   border-radius: 5.375rem;
   cursor: pointer;
+  border: 0;
+  outline: none;
+  background-color: transparent;
   &::before,
   &::after {
     content: "";
@@ -20,6 +23,13 @@
   }
   &::after {
     z-index: -1;
+    backdrop-filter: blur(8px);
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.32),
+      rgba(255, 255, 255, 0.32)
+    );
+    border: 1.3px solid rgba(255, 255, 255, 0.2);
   }
   span {
     color: #fff;

@@ -15,8 +15,17 @@
 }
 @font-face {
   font-family: "denton";
-  src: url("/fonts/denton/denton-test-medium-500.otf") format("openType");
+  src: url("/fonts/denton/DentonCondensedTest-MediumItalic.otf")
+    format("openType");
   font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "denton";
+  src: url("/fonts/denton/DentonCondensedTest-RegularItalic.otf")
+    format("openType");
+  font-weight: 400;
   font-style: italic;
   font-display: swap;
 }
@@ -48,6 +57,7 @@ h1 {
   font-family: "Neue";
   span {
     font-family: "denton";
+    font-style: italic;
   }
 }
 // target p that comes after h1
