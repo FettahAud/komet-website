@@ -1,3 +1,10 @@
+import Header from "@/app/components/Header";
+import "./styles/index.scss";
+
 export default function Home() {
-  return <h1>Hi</h1>;
+  return (
+    <div id="home">
+      <Header />
+    </div>
+  );
 }

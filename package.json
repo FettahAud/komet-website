@@ -9,6 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-three/drei": "^9.70.4",
+    "@react-three/fiber": "^8.9.2",
+    "leva": "^0.9.34",
     "@gsap/react": "^2.1.0",
     "@lottiefiles/lottie-interactivity": "github:lottiefiles/lottie-interactivity",
     "@lottiefiles/lottie-player": "^2.0.2",
@@ -27,6 +30,7 @@
     "react-svg": "^16.1.32",
     "sass": "^1.71.0",
     "scss": "^0.2.4",
+    "three": "^0.148.0",
     "zustand": "^4.5.0"
   },
   "devDependencies": {
