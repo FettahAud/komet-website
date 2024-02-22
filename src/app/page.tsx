@@ -1,8 +1,9 @@
 import Header from "@/app/components/Header";
 import "./styles/index.scss";
-import Clients from "./components/Clients";
-import Hero from "./components/Hero";
-import Brand from "./components/Brand";
+import Clients from "./sections/Clients";
+import Hero from "./sections/Hero";
+import Brand from "./sections/Brand";
+import Approach from "./sections/Approach";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero />
       <Clients />
       <Brand />
+      <Approach />
     </div>
   );
 }
