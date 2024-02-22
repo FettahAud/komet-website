@@ -1,5 +1,6 @@
 import topGradient from "@/../public/svg/approach-gradient.svg";
 import Image from "next/image";
+import ApproachCards from "../components/ApproachCards";
 
 export default function Approach() {
   return (
@@ -14,9 +15,7 @@ export default function Approach() {
           for brands.
         </p>
       </div>
-      <div className="items-wrapper">
-        <div className="item item-1"></div>
-      </div>
+      <ApproachCards />
     </div>
   );
 }
