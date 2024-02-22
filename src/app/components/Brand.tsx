@@ -8,9 +8,13 @@ import { gsap, SplitText } from "@/app/utils/gsap";
 import Chart from "chart.js/auto";
 import { CategoryScale } from "chart.js";
 import { Line } from "react-chartjs-2";
+import bgPattern from "@/../public/svg/pattern-bg.svg";
 
 import up from "@/../public/svg/up.svg";
 import negative from "@/../public/svg/negative.svg";
+import star from "@/../public/svg/star-bg.svg";
+import money from "@/../public/svg/money-change-bg.svg";
+import trend from "@/../public/svg/trend-up-bg.svg";
 
 Chart.register(CategoryScale);
 
@@ -170,7 +174,43 @@ export default function Brand() {
             <br /> that convert
           </h3>
         </div>
-        <div className="col"></div>
+        <div className="col second">
+          <div className="outer-wrapper">
+            <div className="inner-wrapper">
+              <Image className="bg-pattern" src={bgPattern} alt="" />
+              <div className="cards">
+                <div className="card">
+                  <Image src={star} alt="" />
+                  <div className="content">
+                    <h4>25%</h4>
+                    <p>Increase in conversion rates</p>
+                  </div>
+                </div>
+                <div className="card">
+                  <Image src={money} alt="" />
+                  <div className="content">
+                    <h4>2X</h4>
+                    <p>Increase in advertising ROAS</p>
+                  </div>
+                </div>
+                <div className="card">
+                  <Image src={trend} alt="" />
+                  <div className="content">
+                    <h4>20%</h4>
+                    <p>Increase in online sales</p>
+                  </div>
+                </div>
+                <div className="card empty empty-1"></div>
+                <div className="card empty empty-2"></div>
+              </div>
+            </div>
+          </div>
+          <h3>
+            This is the kind of results <span>komet</span>
+            <br />
+            can provide ...
+          </h3>
+        </div>
       </section>
     </div>
   );

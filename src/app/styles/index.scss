@@ -169,10 +169,11 @@
   }
   .brand {
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 1fr max-content;
     grid-template-columns: 1fr;
     gap: 2.5rem;
     margin: 0 9.37rem 5.5rem;
+
     .blur-text-wrapper {
       padding: 7.5rem;
       border-radius: 1.5rem;
@@ -225,7 +226,7 @@
       display: flex;
       gap: 2.5rem;
       width: 100%;
-      height: 20vh;
+      height: max-content;
       .col {
         display: flex;
         // width: 49.375rem;
@@ -349,6 +350,89 @@
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+          }
+        }
+        &.second {
+          height: unset;
+          .outer-wrapper {
+            padding: 0.5rem;
+            position: relative;
+            width: 100%;
+            background: #fafafa;
+            flex: 1;
+            .inner-wrapper {
+              border: 2px solid #ebebeb;
+              padding: 3.8rem 6.6rem;
+              height: 100%;
+              border-radius: 1rem;
+              background-color: #fff;
+
+              .bg-pattern {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+              }
+              .cards {
+                display: flex;
+                flex-direction: column;
+                gap: 0.75rem;
+                position: relative;
+                z-index: 1;
+                .card {
+                  padding: 1.5rem 1.75rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 1.25rem;
+                  border-radius: 1rem;
+                  border: 1px solid #e7e7e7;
+                  background: #fff;
+                  box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.07);
+                  .content {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    gap: 0.25rem;
+                    h4 {
+                      color: #1d1d1f;
+                      font-size: 1.5rem;
+                      font-style: normal;
+                      font-weight: 600;
+                      line-height: 120%; /* 1.8rem */
+                      letter-spacing: -0.03rem;
+                    }
+                    p {
+                      color: hsla(240, 3%, 12%, 0.5);
+                      font-size: 1.125rem;
+                      font-style: normal;
+                      font-weight: 500;
+                      line-height: 120%; /* 1.35rem */
+                      letter-spacing: -0.0225rem;
+                    }
+                  }
+                  &.empty {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 6rem;
+                    &-1 {
+                      scale: 0.9;
+                      bottom: -1.5rem;
+                      z-index: -1;
+                    }
+                    &-2 {
+                      scale: 0.8;
+                      bottom: -3rem;
+                      z-index: -2;
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }
