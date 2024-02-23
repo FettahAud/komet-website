@@ -27,7 +27,7 @@ export default function ApproachCards() {
             <p>What should the brand feel like?</p>
           </div>
         </div>
-        <div className="item item-2">
+        <div className="item item-2 abs-image">
           <Image className="item-svg" src={item2Svg} alt="" />
           <div className="content">
             <h4>Web Design</h4>
@@ -37,7 +37,7 @@ export default function ApproachCards() {
             </p>
           </div>
         </div>
-        <div className="item item-3">
+        <div className="item item-3 abs-image">
           <Image className="item-svg" src={item3Svg} alt="" />
           <div className="content">
             <h4>Development</h4>
@@ -62,7 +62,7 @@ export default function ApproachCards() {
         </div>
       </div>
       <div className="col">
-        <div className="item item-6">
+        <div className="item item-6 abs-image">
           <Image className="item-svg" src={item6Svg} alt="" />
           <div className="logos">
             <Image src={ae} alt="Adobe After Effects" />

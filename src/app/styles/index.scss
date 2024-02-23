@@ -450,6 +450,7 @@
       grid-template-columns: repeat(3, 1fr);
       // grid-template-rows: repeat(3, 1fr);
       gap: 1.5rem;
+      --item-hight: 25rem;
       .col {
         display: flex;
         flex-direction: column;
@@ -495,6 +496,7 @@
         .item-svg {
           z-index: 1;
           max-width: 100%;
+          height: max-content;
         }
         .bg-dots {
           position: absolute;
@@ -504,9 +506,37 @@
           height: 100%;
           z-index: -1;
         }
-        &.item-6 {
+        &.abs-image {
+          height: var(--item-hight);
           justify-content: flex-end;
-          height: 25rem;
+          .item-svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+        }
+        &.item-1 {
+          .item-svg {
+            width: 22.375rem;
+          }
+        }
+        &.item-3 {
+          .item-svg {
+            z-index: -1;
+          }
+        }
+        &.item-4,
+        &.item-5 {
+          height: 38.25rem;
+          .item-svg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            bottom: 0;
+            left: 0;
+          }
+        }
+        &.item-6 {
           .logos {
             margin: auto 0;
             display: flex;
@@ -534,7 +564,7 @@
           }
         }
         &.item-7 {
-          height: 27rem;
+          height: var(--item-hight);
           justify-content: flex-end;
           .item-svg {
             position: absolute;
@@ -551,7 +581,7 @@
         }
         &.item-8 {
           padding-top: 0;
-          height: 25rem;
+          height: var(--item-hight);
           .item-svg {
             height: max-content;
           }
