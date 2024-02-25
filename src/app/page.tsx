@@ -4,6 +4,7 @@ import Clients from "./sections/Clients";
 import Hero from "./sections/Hero";
 import Brand from "./sections/Brand";
 import Approach from "./sections/Approach";
+import Process from "./sections/Process";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Clients />
       <Brand />
       <Approach />
+      <Process />
     </div>
   );
 }
