@@ -5,6 +5,7 @@ import Hero from "./sections/Hero";
 import Brand from "./sections/Brand";
 import Approach from "./sections/Approach";
 import Process from "./sections/Process";
+import Study from "./sections/Study";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Brand />
       <Approach />
       <Process />
+      <Study />
     </div>
   );
 }
