@@ -3,7 +3,7 @@ import Image from "next/image";
 import blackHole from "@/../public/svg/blackhole.svg";
 import blurPath from "@/../public/svg/blur-path.svg";
 import Button3D from "@/app/components/Button3D";
-import CanvasWrapper from "@/app/it/Canvas";
+import CanvasWrapper from "@/app/threeD/Canvas";
 
 export default function Hero() {
   return (

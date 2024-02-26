@@ -6,6 +6,7 @@ import Brand from "./sections/Brand";
 import Approach from "./sections/Approach";
 import Process from "./sections/Process";
 import Study from "./sections/Study";
+import Footer from "./sections/Footer";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Approach />
       <Process />
       <Study />
+      <Footer />
     </div>
   );
 }
