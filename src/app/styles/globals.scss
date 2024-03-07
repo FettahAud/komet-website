@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *,
 *::before,
 *::after {
@@ -87,4 +91,15 @@ h1 + p {
   font-weight: 500;
   line-height: 140%; /* 2.1rem */
   letter-spacing: -0.03rem;
+}
+.particles {
+  position: absolute;
+  width: 42.6875rem;
+  height: 15.3125rem;
+  left: 50%;
+  translate: -50% 0;
+  z-index: -1;
+  #tsparticles {
+    height: 100%;
+  }
 }

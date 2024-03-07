@@ -4,7 +4,7 @@ import Image from "next/image";
 import brandSectionBg from "@/../public/svg/brand-section-bg.svg";
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
-import { gsap, SplitText } from "@/app/utils/gsap";
+import { gsap, SplitText, ScrollTrigger } from "@/app/utils/gsap";
 import Chart from "chart.js/auto";
 import { CategoryScale } from "chart.js";
 import { Line } from "react-chartjs-2";
@@ -15,6 +15,12 @@ import negative from "@/../public/svg/negative.svg";
 import star from "@/../public/svg/star-bg.svg";
 import money from "@/../public/svg/money-change-bg.svg";
 import trend from "@/../public/svg/trend-up-bg.svg";
+import { FollowerPointerCard } from "../components/FollowingPointer";
+import { GlowingStarsBackgroundCard } from "../components/GlowingStars";
+// import {
+//   GlowingStarsBackgroundCard,
+//   Illustration,
+// } from "../components/GlowingStars";
 
 Chart.register(CategoryScale);
 
@@ -36,22 +42,32 @@ export default function Brand() {
     const split = new SplitText(text.current, { type: "lines" });
     tl.add("start", 0);
     tl.set(split.lines, { filter: "blur(5px)" });
-    tl.to(split.lines, { filter: "blur(0px)", stagger: 0.75 }, "start").to(
-      split.lines,
-      { filter: "blur(5px)", stagger: 0.5 },
-      "start+=1"
-    );
-    // keep last line
     tl.to(
-      split.lines[split.lines.length - 1],
-      { filter: "blur(0px)" },
-      "end-=1"
+      // remove last line
+      // split.lines.slice(0, -1),
+      split.lines,
+      { filter: "blur(0px)", duration: 1.5, stagger: 0.75, id: "other-lines" },
+      "start"
+    ).to(
+      split.lines,
+      { filter: "blur(5px)", duration: 1.5, stagger: 0.75 },
+      "start+=1.40"
     );
+    // tl.to(
+    //   split.lines[split.lines.length - 1],
+    //   {
+    //     filter: "blur(0px)",
+    //     // duration: 1,
+    //     id: "last-line",
+    //   },
+    //   "-=1.25"
+    // );
+    // GSDevTools.create({ animation: tl });
   });
   return (
     <div className="brand">
       <div ref={wrapper} className="blur-text-wrapper">
-        <Image src={brandSectionBg} alt="" />
+        {/* <GlowingStarsBackgroundCard></GlowingStarsBackgroundCard> */}
         <p>The Key To a Strong Brand</p>
         <h3 ref={text}>
           Clear, beautiful <span>Websites</span> that convert
@@ -179,6 +195,7 @@ export default function Brand() {
             <div className="inner-wrapper">
               <Image className="bg-pattern" src={bgPattern} alt="" />
               <div className="cards">
+                {/* <FollowerPointerCard> */}
                 <div className="card">
                   <Image src={star} alt="" />
                   <div className="content">
@@ -186,6 +203,8 @@ export default function Brand() {
                     <p>Increase in conversion rates</p>
                   </div>
                 </div>
+                {/* </FollowerPointerCard> */}
+                {/* <FollowerPointerCard> */}
                 <div className="card">
                   <Image src={money} alt="" />
                   <div className="content">
@@ -193,6 +212,8 @@ export default function Brand() {
                     <p>Increase in advertising ROAS</p>
                   </div>
                 </div>
+                {/* </FollowerPointerCard> */}
+                {/* <FollowerPointerCard> */}
                 <div className="card">
                   <Image src={trend} alt="" />
                   <div className="content">
@@ -200,6 +221,8 @@ export default function Brand() {
                     <p>Increase in online sales</p>
                   </div>
                 </div>
+                {/* </FollowerPointerCard> */}
+
                 <div className="card empty empty-1"></div>
                 <div className="card empty empty-2"></div>
               </div>

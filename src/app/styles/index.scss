@@ -85,6 +85,7 @@
       align-items: center;
       max-width: 47rem;
       text-align: center;
+      position: relative;
       .but {
         padding: 1.25rem 2rem;
         &::before {
@@ -94,6 +95,9 @@
             #7917df 101.7%
           );
         }
+      }
+      .particles {
+        top: -5rem;
       }
     }
     .canvas {
@@ -375,6 +379,7 @@
                   border: 1px solid #e7e7e7;
                   background: #fff;
                   box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.07);
+                  position: relative;
                   .content {
                     display: flex;
                     flex-direction: column;
@@ -441,6 +446,9 @@
       flex-direction: column;
       gap: 2.5rem;
       align-items: center;
+      .particles {
+        top: 2rem;
+      }
       p {
         max-width: 31rem;
       }
