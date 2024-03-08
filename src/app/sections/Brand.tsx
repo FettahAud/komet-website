@@ -192,40 +192,38 @@ export default function Brand() {
         </div>
         <div className="col second">
           <div className="outer-wrapper">
-            <div className="inner-wrapper">
-              <Image className="bg-pattern" src={bgPattern} alt="" />
-              <div className="cards">
-                {/* <FollowerPointerCard> */}
-                <div className="card">
-                  <Image src={star} alt="" />
-                  <div className="content">
-                    <h4>25%</h4>
-                    <p>Increase in conversion rates</p>
-                  </div>
+            <Image className="bg-pattern" src={bgPattern} alt="" />
+            <div className="cards">
+              {/* <FollowerPointerCard> */}
+              <div className="card">
+                <Image src={star} alt="" />
+                <div className="content">
+                  <h4>25%</h4>
+                  <p>Increase in conversion rates</p>
                 </div>
-                {/* </FollowerPointerCard> */}
-                {/* <FollowerPointerCard> */}
-                <div className="card">
-                  <Image src={money} alt="" />
-                  <div className="content">
-                    <h4>2X</h4>
-                    <p>Increase in advertising ROAS</p>
-                  </div>
-                </div>
-                {/* </FollowerPointerCard> */}
-                {/* <FollowerPointerCard> */}
-                <div className="card">
-                  <Image src={trend} alt="" />
-                  <div className="content">
-                    <h4>20%</h4>
-                    <p>Increase in online sales</p>
-                  </div>
-                </div>
-                {/* </FollowerPointerCard> */}
-
-                <div className="card empty empty-1"></div>
-                <div className="card empty empty-2"></div>
               </div>
+              {/* </FollowerPointerCard> */}
+              {/* <FollowerPointerCard> */}
+              <div className="card">
+                <Image src={money} alt="" />
+                <div className="content">
+                  <h4>2X</h4>
+                  <p>Increase in advertising ROAS</p>
+                </div>
+              </div>
+              {/* </FollowerPointerCard> */}
+              {/* <FollowerPointerCard> */}
+              <div className="card">
+                <Image src={trend} alt="" />
+                <div className="content">
+                  <h4>20%</h4>
+                  <p>Increase in online sales</p>
+                </div>
+              </div>
+              {/* </FollowerPointerCard> */}
+
+              <div className="card empty empty-1"></div>
+              <div className="card empty empty-2"></div>
             </div>
           </div>
           <h3>
