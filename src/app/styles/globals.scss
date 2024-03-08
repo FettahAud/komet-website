@@ -103,3 +103,27 @@ h1 + p {
     height: 100%;
   }
 }
+
+.but {
+  display: inline-flex;
+  padding: 1rem 2rem;
+  justify-content: center;
+  align-items: center;
+  &-primary {
+    border-radius: 3.125rem;
+    background: linear-gradient(
+      95deg,
+      rgba(4, 122, 255, 0.2) 15.65%,
+      rgba(121, 23, 223, 0.2) 48.71%
+    );
+
+    backdrop-filter: blur(16px);
+    border: 2px solid hsla(212, 100%, 51%, 0.1);
+    span {
+      background: linear-gradient(95deg, #047aff 15.65%, #7917df 48.71%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}

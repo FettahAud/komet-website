@@ -21,7 +21,8 @@ export default function ApproachCards() {
       <div className="col">
         <div className="item item-1">
           <Image className="item-svg" src={item1Svg} alt="" />
-          <Image className="bg-dots" src={bgDots} alt="" />
+          <div className="gradient-bg"></div>
+          {/* <Image className="bg-dots" src={bgDots} alt="" /> */}
           <div className="content">
             <h4>Branding</h4>
             <p>What should the brand feel like?</p>
@@ -64,13 +65,13 @@ export default function ApproachCards() {
       <div className="col">
         <div className="item item-6 abs-image">
           <Image className="item-svg" src={item6Svg} alt="" />
-          <div className="logos">
+          {/* <div className="logos">
             <Image src={ae} alt="Adobe After Effects" />
             <Image src={pr} alt="Adobe Premiere Pro" />
             <Image src={figma} className="fig" alt="Figma" />
             <Image src={ai} alt="Adobe Illustrator" />
             <Image src={ps} alt="Adobe Photoshop" />
-          </div>
+          </div> */}
           <div className="content">
             <h4>Creative Production</h4>
             <p>
@@ -81,13 +82,14 @@ export default function ApproachCards() {
         </div>
         <div className="item item-7">
           <Image className="item-svg item-svg-1" src={item7Svg} alt="" />
-          <Image className="item-svg item-svg-2" src={item7A2Svg} alt="" />
+          <div className="gradient-bg"></div>
+          {/* <Image className="item-svg item-svg-2" src={item7A2Svg} alt="" /> */}
           <div className="content">
             <h4>Optimization</h4>
             <p>How do we improve the design to maximize conversions?</p>
           </div>
         </div>
-        <div className="item item-8">
+        <div className="item item-8 abs-image">
           <Image className="item-svg" src={item8Svg} alt="" />
           <div className="content">
             <h4>User Testing</h4>

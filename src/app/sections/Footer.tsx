@@ -1,7 +1,9 @@
+"use client";
 import Image from "next/image";
 import Button3D from "../components/Button3D";
 import footerImg from "@/../public/svg/footer.svg";
 import gradientPath from "@/../public/svg/gradient-path.svg";
+import lines from "@/../public/svg/footer-lines.svg";
 
 import x from "@/../public/svg/logos/x.svg";
 import facebook from "@/../public/svg/logos/facebook.svg";
@@ -16,9 +18,13 @@ export default function Footer() {
             World-class <span>designs</span> that sell.
           </h2>
           <p>We’re a distributed team of highly skilled people.</p>
-          <Button3D text="Book a call" />
         </div>
-        <Image src={footerImg} alt="" className="footer-img" />
+        <div className="button-wrapper">
+          <Image src={lines} alt="" />
+          <button className="but but-primary">
+            <span>Book a call</span>
+          </button>
+        </div>
       </div>
       <Image src={gradientPath} alt="" className="gradient-path" />
       <div className="bottom-section">
@@ -60,7 +66,17 @@ export default function Footer() {
         </div>
         <div className="copy-right">
           <p>Copyright 2024. all right reserved</p>
-          <button>Back to Top ↑</button>
+          <button
+            onClick={() =>
+              window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: "smooth",
+              })
+            }
+          >
+            Back to Top ↑
+          </button>
         </div>
       </div>
     </div>

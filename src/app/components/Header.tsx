@@ -41,7 +41,9 @@ export default function Header() {
           <li>Careers</li>
         </ul>
       </nav>
-      <Button3D text="Get in touch" />
+      <button className="but but-primary">
+        <span>Get in touch</span>
+      </button>
     </div>
   );
 }

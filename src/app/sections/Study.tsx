@@ -1,9 +1,10 @@
+import Image from "next/image";
 import DashedGrid from "../components/DashedGrid";
-
+import bgDot from "@/../public/svg/dot-grid.svg";
 export default function Study() {
   return (
     <div className="study">
-      <DashedGrid />
+      {/* <DashedGrid /> */}
       <div className="title">
         <h1>
           Case <span>Study</span>
@@ -13,10 +14,9 @@ export default function Study() {
       <div className="items-wrapper">
         <div className="col">
           <div className="item">
-            <div className="img-outer-wrapper">
-              <div className="img-inner-wrapper">
-                <div className="placeholder placeholder-1"></div>
-              </div>
+            <div className="placeholder-wrapper">
+              <Image className="bg-dot" src={bgDot} alt="" />
+              <div className="placeholder placeholder-1"></div>
             </div>
             <div className="detail">
               <span className="label">Category</span>
@@ -25,10 +25,9 @@ export default function Study() {
             </div>
           </div>
           <div className="item">
-            <div className="img-outer-wrapper">
-              <div className="img-inner-wrapper">
-                <div className="placeholder placeholder-3"></div>
-              </div>
+            <div className="placeholder-wrapper">
+              <Image className="bg-dot" src={bgDot} alt="" />
+              <div className="placeholder placeholder-3"></div>
             </div>
             <div className="detail">
               <span className="label">Category</span>
@@ -39,11 +38,10 @@ export default function Study() {
         </div>
         <div className="col">
           <div className="item">
-            <div className="img-outer-wrapper">
-              <div className="img-inner-wrapper multiple-wrapper">
-                <div className="placeholder placeholder-2-1"></div>
-                <div className="placeholder placeholder-2-2"></div>
-              </div>
+            <div className="placeholder-wrapper multiple-wrapper">
+              <Image className="bg-dot" src={bgDot} alt="" />
+              <div className="placeholder placeholder-2-1"></div>
+              <div className="placeholder placeholder-2-2"></div>
             </div>
             <div className="detail">
               <span className="label">Category</span>
@@ -52,10 +50,9 @@ export default function Study() {
             </div>
           </div>
           <div className="item">
-            <div className="img-outer-wrapper">
-              <div className="img-inner-wrapper">
-                <div className="placeholder placeholder-4"></div>
-              </div>
+            <div className="placeholder-wrapper">
+              <Image className="bg-dot" src={bgDot} alt="" />
+              <div className="placeholder placeholder-4"></div>
             </div>
             <div className="detail">
               <span className="label">Category</span>

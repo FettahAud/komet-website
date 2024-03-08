@@ -21,7 +21,9 @@ export default function Hero() {
           World-class <span>designs</span> that sell.
         </h1>
         <p>We’re a distributed team of highly skilled people.</p>
-        <Button3D text="Book a call" />
+        <button className="but but-primary">
+          <span>Book a call</span>
+        </button>
       </div>
       <div className="canvas">
         <Image src={blackHole} alt="" />
